@@ -1,5 +1,4 @@
 import asyncio
-import os
 import time
 
 from telethon import TelegramClient
@@ -8,9 +7,9 @@ from telethon.tl.functions.messages import ToggleDialogPinRequest
 
 load_dotenv()
 
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-PHONE = os.getenv("PHONE")
+API_ID = "API_ID"  # should to be int
+API_HASH = "API_HASH"
+PHONE = "PHONE"
 
 
 client = TelegramClient("session", API_ID, API_HASH)
