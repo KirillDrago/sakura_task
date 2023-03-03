@@ -36,6 +36,7 @@ async def main():
             pinned=True
         ))
         print(f"{group.title} добавлен в архив и закреплен")
+        time.sleep(1)
 
 
 if __name__ == "__main__":
